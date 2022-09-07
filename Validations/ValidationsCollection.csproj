@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net45</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Description>A simple library with validation helpers</Description>
+    <RepositoryUrl>https://github.com/Advitalitum/ValidationsCollection</RepositoryUrl>
+    <Version>2.3.0</Version>
+    <ReleaseNotes>
+      Changes in 2.3.0:
+      Добавлен метод проверки СНИЛС
+      Changes in 2.2.0:
+      Добавлен метод проверки КПП
+      Changes in 2.1.0:
+      Добавлены методы для проверки ИНН физлиц/юрлиц, добавлен метод ValidateInn
+      Changes in 2.0.4:
+      Оптимизация метода валидации ИНН. Добавлены Nullable атрибуты
+      Changes in 2.0.3:
+      Оптимизация метода валидации ИНН. Добавлен проект с бенчмарками
+      Changes in 2.0.2:
+      В XML комментарии добавлена ссылка на википедию с контрольным числом ИНН
+      Changes in 2.0.1:
+      В XML комментарии добавлено замечание о том что представляет из себя валидная строка инн
+      Changes in 2.0.0:
+      Класс ValdiationCollection переименован в Validations
+      Changes in 1.0.1:
+      Добавлена поддержка C# 8.0 и netstandard2.1
+      Changes in 1.0.0:
+      Добавлен метод проверки ИНН
+    </ReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Advitalitum/ValidationsCollection</PackageProjectUrl>
+    <IsPackable>true</IsPackable>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jetbrains.annotations" Version="2020.1.0" />
+    <PackageReference Include="Nullable" Version="1.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
